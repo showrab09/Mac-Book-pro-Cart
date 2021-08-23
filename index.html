@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro</title>
+    <!-- Style  -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+
+</head>
+
+<body>
+    <section>
+        <div class="container home ">
+            <!-- Left Part -->
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <img class="img-fluid mt-5 p-5"id="main" src="images/mac2.jpg" alt="MacBook">
+                    <div class="change-btn">
+                      <button class="rounded" onclick="document.getElementById('main').src='images/mac2.jpg'" >Main Screen</button>
+                      <button class="rounded " onclick="document.getElementById('main').src='images/mac1.jpg'" >Change Screen</button>
+                     </div>
+                     <img class="img-fluid mt-5 p-5" src="images/mac4.jpg" alt="MacBook">
+                     
+                </div>
+                <!-- Right Part -->
+                <div class="col-lg-6 col-md-12">
+                    <h1 class="mt-3">Customize your Blue 24-inch iMac with Apple MacBook pro 16</h1>
+                    <p>The M1 is the first Apple-designed System on a Chip (SoC) that's been developed for use in Macs. It marks Apple's transition away from the Intel chips that the Cupertino company has been using in Macs since 2006.</p>
+                    <div class="memory">
+                        <h5>Memory</h5>
+                        <button class="rounded" id="memory-8">8GB Unified Memory</button>
+                        <button class="rounded" id="memory-16">16GB Unified Memory</button>
+                    </div>
+                    <div class="storage">
+                        <h5>Storage</h5>
+                        <button class="rounded" id="storage-256">256GB SSD Storage</button>
+                        <button class="rounded" id="storage-512">512GB SSD Storage</button>
+                        <button class="rounded" id="storage-1t"> 1TB SSD Storage</button>
+                    </div>
+                    <div class="delivery">
+                        <h5>Choose Your delivery Option</h5>
+                        <button class="rounded" id="delivery-normal">Friday, Aug-25 Free Delivery</button>
+                        <button class="rounded" id="delivery-fast">Tuesday, Aug-21 Delivery $20</button>
+                    </div>
+                    <!-- Cart Section  Start-->
+                    <div class="cart-item mt-5">
+                        <div class="row">
+                            <div class="col-6">
+                                <p>Best Price: </p>
+                                <p>Extra Memory Cost:</p>
+                                <p>Extra Storage Cost:</p>
+                                <p>Delivery Charge:</p>
+                            </div>
+
+                            <div class=" col-6 ">
+                                <p>$<span>1299</span></p>
+                                <p>$<span id="extra-memory">0</span></p>
+                                <p>$<span id="extra-storage">0</span></p>
+                                <p>$<span id="fast-delivery">0</span></p>
+                            </div>
+                            <hr>
+                            <div class="col-6">
+                                <p>Total Price: </p>
+                            </div>
+                            <div class="col-6 ">
+                                <p>$<span id="total-price">1299</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cart Section End-->
+                    <div class="promo">
+                        <h5>Apply Promo Code</h5>
+                        <input class="rounded" type="text" id="promo-input">
+                        <button class="rounded promo-btn" id="promo-apply">Apply</button>
+                    </div>
+                    <hr>
+                    <h2 class="text-danger mb-5">Total: $<span id="final-total">1299</span></h2>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Js Link  -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
